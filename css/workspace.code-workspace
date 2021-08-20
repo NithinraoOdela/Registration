@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\New folder (20)\\colorlib-regform-12\\scss"
+		},
+		{
+			"path": "..\\..\\..\\New folder (20)\\colorlib-regform-12\\fonts"
+		}
+	],
+    "settings": {
+        "liveServer.settings.port": 5501,
+        "liveServer.settings.multiRootWorkspaceName": "New folder (21)"
+    }
+}

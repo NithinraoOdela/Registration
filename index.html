@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>DoSaR - Registration</title>
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+  </head>
+  <body>
+    <!-- top navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="z-index: -1;">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebar"
+          aria-controls="offcanvasExample"
+        >
+          <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+        </button>
+        <a
+          class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
+          href="#" style="font-size: large; text-decoration:  underline ;"
+          >Registration Analasis</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#topNavBar"
+          aria-controls="topNavBar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="topNavBar">
+          <form class="d-flex ms-auto my-3 my-lg-0">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-primary" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle ms-2"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#" >Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- top navigation bar -->
+    <!-- offcanvas -->
+    <div
+      class="offcanvas offcanvas-start sidebar-nav bg-dark"
+      tabindex="-1"
+      id="sidebar"
+    >
+      <div class="offcanvas-body p-0">
+        <nav class="navbar-dark">
+          <ul class="navbar-nav">
+            <li>
+              <div class="text-muted small fw-bold text-uppercase px-3" style="opacity:0;">
+                CORE
+              </div>
+            </li>
+            <li>
+              <a href="#" class="nav-link px-3 active">
+                <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                <span ><a href="https://nithinraoodela.github.io/Main1" id="nn" class="kkd" >Dashboard</a></span>
+              </a>
+            </li>
+            <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
+            <li>
+              <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+                Visualisation Dashboard
+              </div>
+            </li>
+            <li>
+              <a
+                class="nav-link px-3 sidebar-link"
+                data-bs-toggle="collapse"
+                href="#Analysis"
+              >
+                <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                <span ><a href="https://nithinraoodela.github.io/Main2/"  class="kkd" >Analysis</a></span>
+                
+            </li>
+            <li>
+              <a href="#" class="nav-link px-3">
+                <span class="me-2"><i class="bi bi-book-fill"></i></span>
+                <span ><a href="https://nithinraoodela.github.io/Main2/"  class="kkd" >Lists</a></span>
+              </a>
+            </li>
+            <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
+            <li>
+              <div class="text-muted small fw-bold text-uppercase px-3 mb-3" style="opacity: 0;">
+                Addons
+              </div>
+            </li>
+            <li>
+              <a href="#" class="nav-link px-3">
+                <span class="me-2"><i class="bi bi-graph-up" style="opacity: 0;"  ></i></span>
+                <span style="opacity: 0;">Charts</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link px-3">
+                <span class="me-2"><i class="bi bi-table" style="opacity: 0;"></i></span>
+                <span style="opacity: 0;" >Tables</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <h1 class="cc">DoSaR Registration</h1>
+
+    <div class="main">
+        <div class="id">
+                <div id="ll">
+                    <label for="id" class="up"> BITS ID</label>
+                </div>
+                    <input type="texst" class="isd" id="isd" placeholder="20**A*PS****G" required autofocus>
+
+
+            <div >
+                <form action="" class="ff" name="ff">
+
+                    <button class="btt"  id="btt"  onclick="geet()">  Search</button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <script>
+            function geet() {
+                var un = document.getElementById("isd").value
+                var uk = document.getElementById("btt")
+                if (un  === "2019A8PS0429G"){  //Nithin
+                    window.open("ind2.html")
+                }
+                else if (un  === "2019A4PS0501G"){  //CHARAN YADAV
+                    
+                    
+                    window.open("ind3.html")
+                    
+                }
+                else if (un  === "2019A7PS0124G"){ //Addepalli Guru Sai Manikanta Bhaskar
+                    window.open('ind4.html', "_blank")
+                }
+                else if (un  === "2019A4PS0436G"){ //MATSA SAI SURESHKUMAR  
+                    window.open('ind5.html') 
+                }
+                else{
+                    if (un ==="") {
+
+                        alert("Blank / Invalid ID")
+                    }
+                    else{
+
+                        alert(un)
+                    }
+                    
+                }
+            }
+    
+         
+        </script>
+
+
+        
+        <div class="issd">
+            <div class="photo">
+                Photo
+            </div>
+            
+        </div>
+
+        <div class="container">
+            <form method="POST" class="appointment-form" id="appointment-form">
+                <h2>Student Details</h2>
+                <div class="form-group-1">
+                    <input type="text" name="title" id="title" placeholder="NAME" required />
+                    <input type="text" name="name" id="name" placeholder="FATHER NAME" required />
+                    <input type="text" name="name" id="name" placeholder="MOTHER NAME" required />
+                    <input type="email" name="email" id="email" placeholder="EMAIL ID" required />
+                    <input type="number" name="phone_number" id="phone_number" placeholder="PHONE NUMBER" required />
+                    <div class="select-Lists">
+                        <select name="course_type" id="course_type">
+                            <option slected value="">HOSTEL NO</option>
+                            <option value="society">DH-1</option>
+                            <option value="language">DH-2</option>
+                            <option value="society">DH-3</option>
+                            <option value="language">DH-4</option>
+                            <option value="language">AH-1</option>
+                            
+                        </select>
+                    </div>
+                </div>
+                
+                <button  id="submitt" class="submit" >
+                    ENTERED
+
+                </button>
+               
+            </form>
+
+
+            <div class="mm">
+                <div >
+
+                    <button class="lf" ><a href="index.html" id="pp"  class="pp">BITS</a></button>
+                </div>
+                <!-- <button  ><a href="non.html"  ></a></button> -->
+                <div>
+
+                    <button class="lf"><a href="non.html" class="pp">NON-BITS</a></button>
+                </div>
+                
+            </div>
+        </div>
+
+
+        
+        
+    </div>
+
+    
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
