@@ -162,6 +162,14 @@
 
 
       <h1 class="cc">DoSaR Registration</h1>
+          <div class="dropdownd">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdownd-content">
+            <a href="#home">Home</a>
+            <a href="https://nithinraoodela.github.io/Security-Map/">Security Map</a>
+            <a href="https://chat-box-dosar.herokuapp.com/">Chat-Box</a>
+        </div>
+    </div>
 
     <div class="main">
         <div class="id">
@@ -283,7 +291,27 @@
 
     </main>
 
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdownd content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
 
+        // Close the dropdownd if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdownd-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 
 
 
